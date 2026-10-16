@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuvan Rai</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="home-nav">
+        <a href="index.html">Home</a>
+        <a href="#timeline">Timeline</a>
+    </nav>
+
+    <div class="hp-overlay" id="overlay" aria-hidden="true">
+        <div class="hp-side hp-left">
+            <div class="hp-slot" style="left:-185px;top:65px;"><div class="hp-card"><img src="images/sticker1.png" alt=""></div></div>
+            <div class="hp-slot" style="left:-230px;top:225px;"><div class="hp-card"><img src="images/sticker2.png" alt=""></div></div>
+            <div class="hp-slot" style="left:-215px;top:365px;"><div class="hp-card"><img src="images/sticker3.png" alt=""></div></div>
+            <div class="hp-slot" style="left:-185px;top:495px;"><div class="hp-card"><img src="images/sticker4.png" alt=""></div></div>
+            <div class="hp-slot" style="left:-140px;top:610px;"><div class="hp-card"><img src="images/sticker5.png" alt=""></div></div>
+        </div>
+        <div class="hp-side hp-right">
+            <div class="hp-slot" style="right:-195px;top:70px;"><div class="hp-card"><img src="images/sticker6.png" alt=""></div></div>
+            <div class="hp-slot" style="right:-225px;top:230px;"><div class="hp-card"><img src="images/sticker7.png" alt=""></div></div>
+            <div class="hp-slot" style="right:-205px;top:370px;"><div class="hp-card"><img src="images/sticker8.png" alt=""></div></div>
+            <div class="hp-slot" style="right:-180px;top:500px;"><div class="hp-card"><img src="images/sticker9.png" alt=""></div></div>
+            <div class="hp-slot" style="right:-155px;top:615px;"><div class="hp-card"><img src="images/sticker10.png" alt=""></div></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <header>
+            <h1>Bhuvan Rai</h1>
+            <div class="intro">
+                <p>Hi, I am Bhuvan. A boy from Delhi, India with <span class="highlight">a ton of dreams</span>. I am making this site to document everything about <span class="highlight">myself and my journey</span>, all the cool things I did, <span class="highlight">how I failed and how I stood up</span>. Everything!</p>
+                <p>I was born in Delhi but my grandparents were originally from Punjab, India. Been living in Delhi ever since, and safe to say <span class="highlight">it is not that bad</span>. I love to explore stuff, and I sure did explore it all, including <span class="highlight">singing, guitar, cooking, reading, and especially coding</span>. Though I never fully reached my potential until after high school, mainly due to my family's beliefs. My family was not as supportive as most other teens might have gotten, but <span class="highlight">I still learnt to rule my own life</span>.</p>
+            </div>
+        </header>
+
+        <section class="timeline" id="timeline">
+            <h2>Timeline</h2>
+            <h3>Phase 1: 2024-2026 , the so called "Golden period"</h3>
+            <p>Finished middle school with all A grades or above. I thought to myself <span class="highlight">life is good, what else could go wrong</span>. Then entered my life the thing forced on most Indian teens of my age, entrance exams. Before I could even think of what actually interests me, I was forced to choose one of three paths: Science, Commerce, or Arts.</p>
+            <p>You choose commerce or arts and you are insulted for the rest of your life. Choose science and you become <span class="highlight">the good talk in every family gathering</span>.</p>
+            <p>Luckily for me, I always wanted science, not by force, but because I genuinely wanted to <span class="highlight">make something cool with computers</span>. Skipping through two years of insane rat race grinding for my JEE examination comes the best part of my life ever.</p>
+
+            <h3>Phase 2: pre college, my ACTUAL Golden period</h3>
+            <p>Being real, my school never taught useful coding. During high school I was stuck making and learning <span class="highlight">boring, repetitive menu-driven Python programs</span>. After school I had freedom to discover anything, bound by no syllabus or exams, and I fully invested into my biggest hobby, <span class="highlight">making computer stuff</span>. That is when I found <span class="highlight">Hack Club</span>, an organization built by teens, for teens. Finding it for me was the equivalent of finding gold.</p>
+            <p>I learnt day and night. The same guy who did not know what GitHub was had made <span class="highlight">4+ projects in the same month</span> in different fields, including my own 3D model, firmware and PCB for a macropad, a CLI sorter tool, a KNN-based Python drawn number guesser, and an OS-based personal website.</p>
+            <p>I also went to <span class="highlight">coding events and competitions</span> to meet new people outside my school friends for once.</p>
+
+            <h3>Phase 3: college, work in progress</h3>
+            <p>I did not get my dream college, but my college is not half bad. The only thing I hate is <span class="highlight">how different I am from everyone</span>, because I love to make stuff, while others are just focused on bunking classes to do nothing.</p>
+            <p>I am trying to learn more so I can <span class="highlight">resume building cool stuff</span> again, so this phase of my life will be the biggest and most interesting one for me.</p>
+
+            <p class="signoff">With regards, Bhuvan Rai</p>
+        </section>
+    </div>
+
+    <script>
+        const overlay = document.getElementById('overlay');
+        const overlayHeight = 500;
+
+        addEventListener('scroll', () => {
+            const scrolled = scrollY;
+            const opacity = Math.max(0, 1 - (scrolled / overlayHeight));
+            overlay.style.opacity = opacity;
+        });
+    </script>
+</body>
+</html>
